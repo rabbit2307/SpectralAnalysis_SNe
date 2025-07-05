@@ -1,0 +1,107 @@
+import numpy as np
+from astropy.io import fits
+import GPy
+
+# --- User-configurable Parameters ---
+# The redshift (z) of the host galaxy for the supernova.
+redshift = 0.03362
+# The full path to the FITS file containing the supernova spectrum.
+file_path = "/home/raditraian1107/SN_fits/ASASSN-14hr_2456927.9_LCO-duPont_WFCCD_None.fits"
+supernova_name = "ASASSN-14hr"
+
+# --- Physical and Astronomical Constants ---
+C_KM_S = 299792.458  # Speed of light in km/s
+SI_II_6355_WAVELENGTH = 6355.0  # Rest wavelength of the Si II line in Angstroms
+
+def load_fits_spectrum(file_path):
+    try:
+        print(f"Loading spectrum from FITS file: {file_path}")
+        with fits.open(file_path) as hdul:
+            header = hdul[0].header
+            flux = hdul[0].data.flatten().astype(np.float64)
+
+            crval = header['CRVAL1']
+            cdelt = header['CDELT1']
+            crpix = header['CRPIX1']
+
+            wavelength = crval + (np.arange(len(flux)) - (crpix - 1)) * cdelt
+            
+            print("Successfully loaded FITS data.")
+            return wavelength, flux
+            
+    except FileNotFoundError:
+        print(f"\n[ERROR] File not found: {file_path}")
+        return None, None
+    except Exception as e:
+        print(f"\n[ERROR] An error occurred while loading the FITS file: {e}")
+        return None, None
+
+def calculate_velocity(wavelength, flux, redshift):
+    try:
+        # Apply the cosmological redshift correction
+        print(f"Applying redshift correction with z = {redshift}")
+        rest_wavelength = wavelength / (1 + redshift)
+
+        # Normalize the flux for the model
+        flux_norm = flux / np.nanmax(flux)
+
+        # Prepare data for GPy model (requires 2D arrays)
+        X = rest_wavelength[:, np.newaxis]
+        Y = flux_norm[:, np.newaxis]
+
+        # Define the GPR kernel - Matérn 3/2 is a good choice for spectra
+        print("Defining GPy kernel and model...")
+        kernel = GPy.kern.Matern32(input_dim=1, variance=0.1, lengthscale=20.0)
+        
+        # Create and optimize the GP Regression model
+        model = GPy.models.GPRegression(X, Y, kernel)
+        print("Optimizing GPR model...")
+        model.optimize(messages=False)
+
+        # Generate a high-resolution prediction from the model
+        gpr_wave_fit = np.linspace(rest_wavelength.min(), rest_wavelength.max(), 2000)[:, np.newaxis]
+        gpr_flux_fit, _ = model.predict(gpr_wave_fit)
+
+        # Define the search window in the rest frame
+        search_window = (gpr_wave_fit > 5850) & (gpr_wave_fit < 6150)
+        
+        if not np.any(search_window):
+             print("\n[WARNING] The Si II absorption feature was not found in the expected window.")
+             return None
+
+        # Find the minimum within the search window
+        min_flux_index = np.argmin(gpr_flux_fit[search_window])
+        # Get the corresponding wavelength
+        min_flux_wavelength = gpr_wave_fit[search_window][min_flux_index]
+
+        print(f"Identified minimum of the Si II 6355 line at {min_flux_wavelength:.2f} Å.")
+
+        # Calculate velocity using the relativistic Doppler formula for accuracy
+        l_quot = min_flux_wavelength / SI_II_6355_WAVELENGTH
+        velocity = C_KM_S * (1 - l_quot**2) / (1 + l_quot**2)
+
+        return velocity
+
+    except Exception as e:
+        print(f"\n[ERROR] Failed during velocity calculation: {e}")
+        return None
+
+def main():
+    print("-" * 50)
+    print(f"Starting Velocity Analysis for: {supernova_name}")
+    print("-" * 50)
+
+    # Step 1: Load the spectrum
+    observed_wavelength, flux = load_fits_spectrum(file_path)
+
+    if observed_wavelength is not None:
+        # Step 2: Calculate the velocity
+        velocity = calculate_velocity(observed_wavelength, flux, redshift)
+        
+        if velocity is not None:
+            print("\n--- Final Results ---")
+            print(f"Calculated Ejecta Velocity for {supernova_name}: {velocity:.2f} km/s")
+            print("-" * 50)
+
+if __name__ == '__main__':
+    main()
