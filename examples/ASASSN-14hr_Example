@@ -6,12 +6,11 @@ import sys
 import os
 
 # --- Configuration ---
-FITS_FILE_PATH = "/mnt/c/Users/Lenovo/Downloads/ASASSN-14hr_2456927.9_LCO-duPont_WFCCD_None (5).fits"
+FITS_FILE_PATH = FITS_FILE_PATH = "/mnt/c/Users/Lenovo/Downloads/ASASSN-14hr_2456927.9_LCO-duPont_WFCCD_None (5).fits"
 REDSHIFT = 0.03362
 TEMP_FILENAME = 'temp_spectrum_for_spextractor.txt' # Temporary file we will create
 OUTPUT_FILENAME = 'Ia_example.png'
 
-# --- 1. Data Loading from FITS ---
 try:
     with fits.open(FITS_FILE_PATH) as hdul:
         header = hdul[0].header
@@ -23,9 +22,7 @@ try:
 except Exception as e:
     sys.exit(f"An error occurred during FITS file loading: {e}")
 
-# --- 2. Workaround: Save data to a temporary text file ---
 try:
-    # Stack wavelength and flux as two columns and save to a text file
     data_to_save = np.stack((wavelength, flux), axis=-1)
     np.savetxt(TEMP_FILENAME, data_to_save)
 
@@ -33,9 +30,7 @@ except Exception as e:
     sys.exit(f"An error occurred while saving the temporary file: {e}")
 
 
-# --- 3. Spectral Analysis using the temporary file ---
 try:
-    # Pass the FILENAME of the temporary text file to the function
     pew, pew_err, vel, vel_err, gp_model = spextractor.process_spectra(
         TEMP_FILENAME, 
         REDSHIFT, 
@@ -47,12 +42,10 @@ try:
 except Exception as e:
     sys.exit(f"An error occurred during spextractor processing: {e}")
 finally:
-    # --- 4. Cleanup: Remove the temporary file ---
     if os.path.exists(TEMP_FILENAME):
         os.remove(TEMP_FILENAME)
 
 
-# --- 5. Reporting & Plotting ---
 print("Pseudo-Equivalent Widths (Å):")
 for key in sorted(pew):
     print(f"{key}: {pew[key]:.2f} ± {pew_err[key]:.2f}")
