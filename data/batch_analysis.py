@@ -6,28 +6,20 @@ import numpy as np
 import pandas as pd
 import spextractor
 
-# --- CONFIGURATION ---
-# This script is designed to be run from inside the 'data' directory.
-# The JSON files are in the 'Supernovae Dataset' subdirectory.
 DATA_DIR = 'Supernovae Dataset' 
-# Results will be created one level up, outside the data directory.
 RESULTS_DIR = '../results' 
-# The paper CSV is also in the current directory.
 PAPER_CSV_PATH = 'sample_paper_data.csv' 
 TEMP_FILENAME = 'temp_spectrum_for_analysis.dat'
 
-# Create the results directory if it doesn't exist
 if not os.path.exists(RESULTS_DIR):
     os.makedirs(RESULTS_DIR)
 
-# --- MAIN ANALYSIS FUNCTION ---
 def analyze_supernova(json_path, paper_df):
     """
     Analyzes a single supernova JSON file, compares it to paper data,
     and saves the results and a plot.
     """
     try:
-        # --- 1. Load and Extract Data from JSON ---
         with open(json_path, 'r') as f:
             input_data = json.load(f)
 
@@ -35,14 +27,11 @@ def analyze_supernova(json_path, paper_df):
         supernova_data = input_data[json_supernova_name]
         print(f"--- Processing: {json_supernova_name} ---")
 
-        # --- Standardize supernova name to match CSV ---
-        # If the name from JSON starts with a digit (e.g., "2005de"), prepend "SN"
         if json_supernova_name[0].isdigit():
             supernova_name_for_paper = f"SN{json_supernova_name}"
         else:
             supernova_name_for_paper = json_supernova_name
         
-        # Extract spectral data
         if 'spectra' not in supernova_data or not supernova_data['spectra']:
             print(f"Skipping {json_supernova_name}: No spectral data found.")
             return None
@@ -51,7 +40,6 @@ def analyze_supernova(json_path, paper_df):
         wavelengths = [float(point[0]) for point in spectral_data]
         fluxes = [float(point[1]) for point in spectral_data]
 
-        # --- 2. Run Spextractor ---
         np.savetxt(TEMP_FILENAME, np.transpose([wavelengths, fluxes]))
         
         supernova_type = supernova_data.get("claimedtype", [{}])[0].get("value", "Ia")
@@ -61,7 +49,6 @@ def analyze_supernova(json_path, paper_df):
             TEMP_FILENAME, redshift, plot=False, type=supernova_type
         )
 
-        # --- 3. Get Comparison Data from Paper ---
         paper_row = paper_df[paper_df['supernova_name'] == supernova_name_for_paper]
         if paper_row.empty:
             print(f"Warning: No data found for '{supernova_name_for_paper}' in paper_data.csv")
@@ -69,8 +56,6 @@ def analyze_supernova(json_path, paper_df):
         else:
             paper_results = paper_row.iloc[0].to_dict()
 
-        # --- 4. Combine and Save Results ---
-        # Use .get() to avoid errors if a key doesn't exist in the results
         combined_results = {
             "supernova_name": json_supernova_name,
             "metadata": {
@@ -91,20 +76,16 @@ def analyze_supernova(json_path, paper_df):
             }
         }
         
-        # Save detailed JSON output for this SN
         output_json_path = os.path.join(RESULTS_DIR, f"{json_supernova_name}_comparison.json")
         with open(output_json_path, 'w') as f:
             json.dump(combined_results, f, indent=4)
 
-        # --- 5. Generate Comparison Plot ---
         plt.figure(figsize=(14, 8))
         plt.plot(wavelengths, fluxes, color='black', linewidth=1, label='Spectrum')
         plt.title(f"Analysis for {json_supernova_name}", fontsize=16)
         plt.xlabel("Wavelength (Å)", fontsize=12)
         plt.ylabel("Flux", fontsize=12)
         
-        # Add a text box with the comparison
-        # Use .get() with a default value to handle missing data gracefully
         spex_pew = pew.get('Si II 6150A')
         spex_pew_err = pew_err.get('Si II 6150A')
         spex_vel = vel.get('Si II 6150A')
@@ -125,7 +106,7 @@ def analyze_supernova(json_path, paper_df):
         plt.legend()
         plt.tight_layout()
         plt.savefig(os.path.join(RESULTS_DIR, f"{json_supernova_name}_comparison.png"), dpi=150)
-        plt.close() # Close the plot to free up memory
+        plt.close() 
 
         return combined_results
 
@@ -136,20 +117,17 @@ def analyze_supernova(json_path, paper_df):
         if os.path.exists(TEMP_FILENAME):
             os.remove(TEMP_FILENAME)
 
-# --- SCRIPT EXECUTION ---
+
 if __name__ == "__main__":
-    # Load the paper data once
     try:
         paper_df = pd.read_csv(PAPER_CSV_PATH)
     except FileNotFoundError:
         sys.exit(f"Error: The paper data file was not found at '{PAPER_CSV_PATH}'")
 
-    # Get the list of all JSON files to process
     json_files = [f for f in os.listdir(DATA_DIR) if f.endswith('.json')]
     
     all_results = []
     
-    # Loop through each file and analyze it
     for i, filename in enumerate(json_files):
         print(f"\nProcessing file {i+1}/{len(json_files)}: {filename}")
         json_path = os.path.join(DATA_DIR, filename)
@@ -157,7 +135,6 @@ if __name__ == "__main__":
         if result:
             all_results.append(result)
             
-    # --- Create a final summary CSV ---
     summary_data = []
     for res in all_results:
         summary_data.append({
