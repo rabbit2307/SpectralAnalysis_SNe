@@ -1,0 +1,76 @@
+{
+    "metadata": {
+        "source_type": "Ia",
+        "redshift": 0.03362,
+        "plot_file": "supernova_spectrum.png",
+        "source_file": "/mnt/c/Users/Lenovo/OneDrive/Desktop/Supernova/Model Comparison/Sample Supernovae Dataset/ASASSN-14hr.json"
+    },
+    "pseudo_equivalent_widths_A": {
+        "Ca II H&K": {
+            "value": NaN,
+            "error": NaN
+        },
+        "Ca II IR": {
+            "value": 118.41,
+            "error": 12.67
+        },
+        "Fe II 4800A": {
+            "value": NaN,
+            "error": NaN
+        },
+        "Mg II 4300A": {
+            "value": NaN,
+            "error": NaN
+        },
+        "S W": {
+            "value": 42.38,
+            "error": 5.99
+        },
+        "Si 4000A": {
+            "value": NaN,
+            "error": NaN
+        },
+        "Si II 5800A": {
+            "value": 24.61,
+            "error": 5.49
+        },
+        "Si II 6150A": {
+            "value": 103.8,
+            "error": 6.56
+        }
+    },
+    "velocities_10e3_km_s": {
+        "Ca II H&K": {
+            "value": NaN,
+            "error": NaN
+        },
+        "Ca II IR": {
+            "value": -0.72,
+            "error": 1.79
+        },
+        "Fe II 4800A": {
+            "value": NaN,
+            "error": NaN
+        },
+        "Mg II 4300A": {
+            "value": NaN,
+            "error": NaN
+        },
+        "S W": {
+            "value": 3.86,
+            "error": 0.22
+        },
+        "Si 4000A": {
+            "value": NaN,
+            "error": NaN
+        },
+        "Si II 5800A": {
+            "value": 12.94,
+            "error": 0.45
+        },
+        "Si II 6150A": {
+            "value": 11.9,
+            "error": 0.46
+        }
+    }
+}
