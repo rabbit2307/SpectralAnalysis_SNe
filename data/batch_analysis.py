@@ -30,6 +30,14 @@ def analyze_supernova(json_path, paper_df):
         supernova_data = input_data[json_key_name]
         print(f"--- Processing: {json_supernova_name} (Key: {json_key_name}) ---")
 
+<<<<<<< HEAD
+=======
+        if json_supernova_name[0].isdigit():
+            supernova_name_for_paper = f"SN{json_supernova_name}"
+        else:
+            supernova_name_for_paper = json_supernova_name
+        
+>>>>>>> ca43fffcdce855bd016bfb36b066cf3477600430
         if 'spectra' not in supernova_data or not supernova_data['spectra']:
             print(f"Skipping {json_supernova_name}: No spectral data found.")
             raise ValueError("No spectral data in JSON file.")
@@ -51,13 +59,55 @@ def analyze_supernova(json_path, paper_df):
         pew, pew_err, vel, vel_err, _ = spextractor.process_spectra(
             TEMP_FILENAME, redshift, plot=False, type=analysis_type
         )
+<<<<<<< HEAD
         
+=======
+
+        paper_row = paper_df[paper_df['supernova_name'] == supernova_name_for_paper]
+        if paper_row.empty:
+            print(f"Warning: No data found for '{supernova_name_for_paper}' in paper_data.csv")
+            paper_results = {}
+        else:
+            paper_results = paper_row.iloc[0].to_dict()
+
+        combined_results = {
+            "supernova_name": json_supernova_name,
+            "metadata": {
+                "type": supernova_type,
+                "redshift": redshift
+            },
+            "analysis_results": {
+                "pEW_SiII_6150A": pew.get('Si II 6150A'),
+                "pEW_SiII_6150A_err": pew_err.get('Si II 6150A'),
+                "v_SiII_6150A": vel.get('Si II 6150A'),
+                "v_SiII_6150A_err": vel_err.get('Si II 6150A')
+            },
+            "paper_results": {
+                "pEW_SiII_6355": paper_results.get('pEW_SiII_6355'),
+                "pEW_SiII_6355_err": paper_results.get('pEW_SiII_6355_err'),
+                "v_SiII": paper_results.get('v_SiII'),
+                "v_SiII_err": paper_results.get('v_SiII_err')
+            }
+        }
+        
+        output_json_path = os.path.join(RESULTS_DIR, f"{json_supernova_name}_comparison.json")
+        with open(output_json_path, 'w') as f:
+            json.dump(combined_results, f, indent=4)
+
+        plt.figure(figsize=(14, 8))
+        plt.plot(wavelengths, fluxes, color='black', linewidth=1, label='Spectrum')
+        plt.title(f"Analysis for {json_supernova_name}", fontsize=16)
+        plt.xlabel("Wavelength (Å)", fontsize=12)
+        plt.ylabel("Flux", fontsize=12)
+        
+>>>>>>> ca43fffcdce855bd016bfb36b066cf3477600430
         spex_pew = pew.get('Si II 6150A')
         analysis_successful = spex_pew is not None and not np.isnan(spex_pew)
 
         if not analysis_successful:
             print(f"Incomplete analysis for {json_supernova_name}: Key measurements (pEW) are invalid (nan).")
 
+<<<<<<< HEAD
         if json_supernova_name.startswith('SN'):
              supernova_name_for_paper = json_supernova_name
         elif json_supernova_name[0].isdigit():
@@ -67,6 +117,13 @@ def analyze_supernova(json_path, paper_df):
             
         paper_row = paper_df[paper_df['supernova_name'] == supernova_name_for_paper]
         paper_results = paper_row.iloc[0].to_dict() if not paper_row.empty else {}
+=======
+        plt.grid(True, linestyle='--', alpha=0.5)
+        plt.legend()
+        plt.tight_layout()
+        plt.savefig(os.path.join(RESULTS_DIR, f"{json_supernova_name}_comparison.png"), dpi=150)
+        plt.close() 
+>>>>>>> ca43fffcdce855bd016bfb36b066cf3477600430
 
         full_results = {
             "supernova_name": json_supernova_name,
@@ -118,6 +175,10 @@ def analyze_supernova(json_path, paper_df):
         if os.path.exists(TEMP_FILENAME):
             os.remove(TEMP_FILENAME)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca43fffcdce855bd016bfb36b066cf3477600430
 if __name__ == "__main__":
     try:
         paper_df = pd.read_csv(PAPER_CSV_PATH)
