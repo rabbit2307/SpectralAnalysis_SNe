@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2007ca",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.014066
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 63.317684174566566,
+        "pEW_SiII_6150A_err": 8.46083952581562,
+        "v_SiII_6150A": 12.265740155018499,
+        "v_SiII_6150A_err": 0.7955113342129885
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 89.9,
+        "pEW_SiII_6355_err": 2.4,
+        "v_SiII": 11.0,
+        "v_SiII_err": 0.3
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2003W",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.020071
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": NaN,
+        "pEW_SiII_6150A_err": NaN,
+        "v_SiII_6150A": NaN,
+        "v_SiII_6150A_err": NaN
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 108.2,
+        "pEW_SiII_6355_err": 3.5,
+        "v_SiII": 15.2,
+        "v_SiII_err": 0.5
+    }
+}

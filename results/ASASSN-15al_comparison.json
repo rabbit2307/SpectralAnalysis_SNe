@@ -1,0 +1,19 @@
+{
+    "supernova_name": "ASASSN-15al",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.03
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 77.606602845605,
+        "pEW_SiII_6150A_err": 8.185710135504255,
+        "v_SiII_6150A": 10.601923181874131,
+        "v_SiII_6150A_err": 0.25349509916557794
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 81.7,
+        "pEW_SiII_6355_err": 5.5,
+        "v_SiII": 11.7,
+        "v_SiII_err": 0.1
+    }
+}

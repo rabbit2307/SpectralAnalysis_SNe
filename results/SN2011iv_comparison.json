@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2011iv",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.006494
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 94.52438126399123,
+        "pEW_SiII_6150A_err": 2.0680463354751497,
+        "v_SiII_6150A": 10.312499636988646,
+        "v_SiII_6150A_err": 0.2524496394652718
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 88.6,
+        "pEW_SiII_6355_err": 2.0,
+        "v_SiII": 10.9,
+        "v_SiII_err": 0.2
+    }
+}

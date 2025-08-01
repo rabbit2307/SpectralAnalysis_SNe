@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2002cr",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.00948
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 120.64493938173895,
+        "pEW_SiII_6150A_err": 2.494275575854824,
+        "v_SiII_6150A": 12.218332973650748,
+        "v_SiII_6150A_err": 0.3838155800217308
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 104.6,
+        "pEW_SiII_6355_err": 2.0,
+        "v_SiII": 10.1,
+        "v_SiII_err": 0.1
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2007ux",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.030915
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 72.96418319385533,
+        "pEW_SiII_6150A_err": 14.46269811925018,
+        "v_SiII_6150A": 10.499314547269043,
+        "v_SiII_6150A_err": 0.9200054642301572
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 124.1,
+        "pEW_SiII_6355_err": 9.6,
+        "v_SiII": 11.1,
+        "v_SiII_err": 0.2
+    }
+}

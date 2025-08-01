@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2013E",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.009413
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 62.19797113811152,
+        "pEW_SiII_6150A_err": 4.709765847802327,
+        "v_SiII_6150A": 11.7614071531931,
+        "v_SiII_6150A_err": 0.8030105501535252
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 65.2,
+        "pEW_SiII_6355_err": 3.0,
+        "v_SiII": 12.6,
+        "v_SiII_err": 0.3
+    }
+}

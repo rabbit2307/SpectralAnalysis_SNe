@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2005el",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.014885
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 90.12940909495147,
+        "pEW_SiII_6150A_err": 3.2521315474081383,
+        "v_SiII_6150A": 15.980582725960309,
+        "v_SiII_6150A_err": 0.41101098837667305
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 93.9,
+        "pEW_SiII_6355_err": 4.2,
+        "v_SiII": 10.9,
+        "v_SiII_err": 0.3
+    }
+}

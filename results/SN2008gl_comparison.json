@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2008gl",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.034017
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": -1.642095954749569,
+        "pEW_SiII_6150A_err": 0.6970329231318549,
+        "v_SiII_6150A": 7.564759463780476,
+        "v_SiII_6150A_err": 0.19301470063084314
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 115.0,
+        "pEW_SiII_6355_err": 3.3,
+        "v_SiII": 11.9,
+        "v_SiII_err": 0.4
+    }
+}

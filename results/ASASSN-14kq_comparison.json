@@ -1,0 +1,19 @@
+{
+    "supernova_name": "ASASSN-14kq",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.0336
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": NaN,
+        "pEW_SiII_6150A_err": NaN,
+        "v_SiII_6150A": NaN,
+        "v_SiII_6150A_err": NaN
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 82.5,
+        "pEW_SiII_6355_err": 3.5,
+        "v_SiII": 10.5,
+        "v_SiII_err": 0.3
+    }
+}

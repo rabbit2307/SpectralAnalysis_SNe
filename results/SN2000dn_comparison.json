@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2000dn",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.032065
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 103.26638465248898,
+        "pEW_SiII_6150A_err": 5.813972466733283,
+        "v_SiII_6150A": 11.21197891960819,
+        "v_SiII_6150A_err": 0.44865890272294023
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 102.4,
+        "pEW_SiII_6355_err": 3.6,
+        "v_SiII": 9.7,
+        "v_SiII_err": 0.3
+    }
+}

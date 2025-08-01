@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2002eb",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.027536
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 64.664193569545,
+        "pEW_SiII_6150A_err": 4.674413019095448,
+        "v_SiII_6150A": 10.369482504495858,
+        "v_SiII_6150A_err": 0.46980682606877133
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 65.0,
+        "pEW_SiII_6355_err": 4.1,
+        "v_SiII": 10.1,
+        "v_SiII_err": 0.2
+    }
+}

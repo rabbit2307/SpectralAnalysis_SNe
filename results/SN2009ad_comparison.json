@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2009ad",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.02834
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": NaN,
+        "pEW_SiII_6150A_err": NaN,
+        "v_SiII_6150A": NaN,
+        "v_SiII_6150A_err": NaN
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 67.4,
+        "pEW_SiII_6355_err": 3.6,
+        "v_SiII": 10.2,
+        "v_SiII_err": 0.2
+    }
+}

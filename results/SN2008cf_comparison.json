@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2008cf",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.046029
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 34.32608988582069,
+        "pEW_SiII_6150A_err": 14.05567540897788,
+        "v_SiII_6150A": 9.509280526758843,
+        "v_SiII_6150A_err": 2.4407498589151495
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 55.6,
+        "pEW_SiII_6355_err": 5.0,
+        "v_SiII": 10.2,
+        "v_SiII_err": 0.3
+    }
+}

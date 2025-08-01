@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN1998dh",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.00897
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 110.16109639345203,
+        "pEW_SiII_6150A_err": 1.862991385777863,
+        "v_SiII_6150A": 13.601477111933239,
+        "v_SiII_6150A_err": 0.4872911544950673
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 124.6,
+        "pEW_SiII_6355_err": 2.0,
+        "v_SiII": 12.4,
+        "v_SiII_err": 0.2
+    }
+}

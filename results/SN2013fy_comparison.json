@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2013fy",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.03
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 69.38651652397712,
+        "pEW_SiII_6150A_err": 4.63508156678493,
+        "v_SiII_6150A": 13.093982708857997,
+        "v_SiII_6150A_err": 0.7529252305866464
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 93.4,
+        "pEW_SiII_6355_err": 3.1,
+        "v_SiII": 10.8,
+        "v_SiII_err": 0.3
+    }
+}

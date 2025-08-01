@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2001V",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.01502
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 40.42414385181975,
+        "pEW_SiII_6150A_err": 4.899514444685093,
+        "v_SiII_6150A": 13.49189591896045,
+        "v_SiII_6150A_err": 0.624658678041903
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 57.0,
+        "pEW_SiII_6355_err": 1.9,
+        "v_SiII": 11.4,
+        "v_SiII_err": 0.1
+    }
+}

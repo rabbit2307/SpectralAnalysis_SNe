@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2008bc",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.015707
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": NaN,
+        "pEW_SiII_6150A_err": NaN,
+        "v_SiII_6150A": NaN,
+        "v_SiII_6150A_err": NaN
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 105.0,
+        "pEW_SiII_6355_err": 6.5,
+        "v_SiII": 11.7,
+        "v_SiII_err": 0.2
+    }
+}

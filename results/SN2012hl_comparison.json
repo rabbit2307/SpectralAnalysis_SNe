@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2012hl",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.033
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 116.7741044130117,
+        "pEW_SiII_6150A_err": 14.182630253142765,
+        "v_SiII_6150A": 13.307892974308904,
+        "v_SiII_6150A_err": 0.8870071311575758
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 142.0,
+        "pEW_SiII_6355_err": 7.3,
+        "v_SiII": 12.9,
+        "v_SiII_err": 0.2
+    }
+}

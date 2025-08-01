@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2006ex",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.1475
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 98.36121070358188,
+        "pEW_SiII_6150A_err": 15.377085947530247,
+        "v_SiII_6150A": 13.003501311919047,
+        "v_SiII_6150A_err": 0.4770613409485487
+    },
+    "paper_results": {
+        "pEW_SiII_6355": null,
+        "pEW_SiII_6355_err": null,
+        "v_SiII": null,
+        "v_SiII_err": null
+    }
+}

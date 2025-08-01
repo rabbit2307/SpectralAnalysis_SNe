@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2003gt",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.015657
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 73.24270734461679,
+        "pEW_SiII_6150A_err": 4.1174177288458225,
+        "v_SiII_6150A": 11.286861461108538,
+        "v_SiII_6150A_err": 0.3529894094230321
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 76.8,
+        "pEW_SiII_6355_err": 4.1,
+        "v_SiII": 11.3,
+        "v_SiII_err": 0.4
+    }
+}

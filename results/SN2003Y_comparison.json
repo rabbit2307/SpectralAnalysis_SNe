@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2003Y",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.01694
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 94.79418974687556,
+        "pEW_SiII_6150A_err": 20.258940155467517,
+        "v_SiII_6150A": 11.01531540003215,
+        "v_SiII_6150A_err": 0.9853902495633953
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 104.1,
+        "pEW_SiII_6355_err": 5.9,
+        "v_SiII": 11.3,
+        "v_SiII_err": 0.4
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2006lf",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.013189
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 97.21179306592371,
+        "pEW_SiII_6150A_err": 23.09825753565083,
+        "v_SiII_6150A": 11.948241025701444,
+        "v_SiII_6150A_err": 1.317652869999336
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 100.4,
+        "pEW_SiII_6355_err": 4.4,
+        "v_SiII": 11.7,
+        "v_SiII_err": 0.1
+    }
+}

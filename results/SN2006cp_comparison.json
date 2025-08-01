@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2006cp",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.022289
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 155.8836043789587,
+        "pEW_SiII_6150A_err": 6.344089139631919,
+        "v_SiII_6150A": 16.541799240973813,
+        "v_SiII_6150A_err": 0.8869609344998202
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 159.0,
+        "pEW_SiII_6355_err": 3.0,
+        "v_SiII": 14.9,
+        "v_SiII_err": 0.5
+    }
+}

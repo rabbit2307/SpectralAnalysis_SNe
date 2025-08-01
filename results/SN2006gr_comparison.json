@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2006gr",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.034601
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 58.8868421129864,
+        "pEW_SiII_6150A_err": 18.616336345163543,
+        "v_SiII_6150A": 19.695249141487032,
+        "v_SiII_6150A_err": 1.2312063519892473
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 65.0,
+        "pEW_SiII_6355_err": 4.2,
+        "v_SiII": 11.3,
+        "v_SiII_err": 0.4
+    }
+}

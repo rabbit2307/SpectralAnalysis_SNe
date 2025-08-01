@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2004at",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.023131
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 78.90016510580324,
+        "pEW_SiII_6150A_err": 5.515148882678239,
+        "v_SiII_6150A": 12.11224265616449,
+        "v_SiII_6150A_err": 0.5712232040032604
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 92.6,
+        "pEW_SiII_6355_err": 2.3,
+        "v_SiII": 10.7,
+        "v_SiII_err": 0.2
+    }
+}

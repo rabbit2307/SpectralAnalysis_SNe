@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2014I",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.03
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": NaN,
+        "pEW_SiII_6150A_err": NaN,
+        "v_SiII_6150A": NaN,
+        "v_SiII_6150A_err": NaN
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 98.7,
+        "pEW_SiII_6355_err": 4.7,
+        "v_SiII": 11.3,
+        "v_SiII_err": 0.2
+    }
+}

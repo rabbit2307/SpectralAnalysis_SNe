@@ -1,0 +1,19 @@
+{
+    "supernova_name": "PS1-14xw",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.02448
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": 78.04136580096214,
+        "pEW_SiII_6150A_err": 4.339101456975586,
+        "v_SiII_6150A": 13.084551284594648,
+        "v_SiII_6150A_err": 0.6814228432229904
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 77.8,
+        "pEW_SiII_6355_err": 2.7,
+        "v_SiII": 11.7,
+        "v_SiII_err": 0.2
+    }
+}

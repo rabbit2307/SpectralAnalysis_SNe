@@ -1,0 +1,19 @@
+{
+    "supernova_name": "SN2009ds",
+    "metadata": {
+        "type": "Ia",
+        "redshift": 0.019227
+    },
+    "analysis_results": {
+        "pEW_SiII_6150A": NaN,
+        "pEW_SiII_6150A_err": NaN,
+        "v_SiII_6150A": NaN,
+        "v_SiII_6150A_err": NaN
+    },
+    "paper_results": {
+        "pEW_SiII_6355": 71.8,
+        "pEW_SiII_6355_err": 3.8,
+        "v_SiII": 12.6,
+        "v_SiII_err": 0.1
+    }
+}
