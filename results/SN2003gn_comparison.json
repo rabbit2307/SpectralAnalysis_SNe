@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2003gn",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.03445
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 139.669758745021,
         "pEW_SiII_6150A_err": 11.148337961088469,
         "v_SiII_6150A": 13.327318624033817,
-        "v_SiII_6150A_err": 1.5249344577196782
+        "v_SiII_6150A_err": 1.3965076133335375
     },
     "paper_results": {
-        "pEW_SiII_6355": 96.1,
-        "pEW_SiII_6355_err": 3.1,
+        "supernova_name": "SN2003gn",
         "v_SiII": 11.1,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 24.0,
+        "pEW_SiII_5972_err": 2.5,
+        "pEW_SiII_6355": 96.1,
+        "pEW_SiII_6355_err": 3.1
     }
 }

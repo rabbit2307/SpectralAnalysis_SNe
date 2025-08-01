@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN1999gp",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.02675
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 47.67768079832421,
         "pEW_SiII_6150A_err": 3.9112858706555036,
         "v_SiII_6150A": 11.44845616266416,
-        "v_SiII_6150A_err": 0.8236678725826544
+        "v_SiII_6150A_err": 0.7751771870383315
     },
     "paper_results": {
-        "pEW_SiII_6355": 104.6,
-        "pEW_SiII_6355_err": 2.4,
+        "supernova_name": "SN1999gp",
         "v_SiII": 10.6,
-        "v_SiII_err": 0.2
+        "v_SiII_err": 0.2,
+        "pEW_SiII_5972": 22.7,
+        "pEW_SiII_5972_err": 1.4,
+        "pEW_SiII_6355": 104.6,
+        "pEW_SiII_6355_err": 2.4
     }
 }

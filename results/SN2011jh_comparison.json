@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2011jh",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.0078
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 96.91685799413624,
         "pEW_SiII_6150A_err": 19.134948352573172,
         "v_SiII_6150A": 14.831367825353762,
-        "v_SiII_6150A_err": 1.3025033200885465
+        "v_SiII_6150A_err": 1.2835769111201534
     },
     "paper_results": {
-        "pEW_SiII_6355": 126.1,
-        "pEW_SiII_6355_err": 3.9,
+        "supernova_name": "SN2011jh",
         "v_SiII": 12.8,
-        "v_SiII_err": 0.2
+        "v_SiII_err": 0.2,
+        "pEW_SiII_5972": 35.0,
+        "pEW_SiII_5972_err": 2.8,
+        "pEW_SiII_6355": 126.1,
+        "pEW_SiII_6355_err": 3.9
     }
 }

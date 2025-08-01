@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2006hx",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.044404
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 2.02397419376816,
         "pEW_SiII_6150A_err": 4.713333383973191,
         "v_SiII_6150A": 7.1262708763161,
-        "v_SiII_6150A_err": 2.175148881021109
+        "v_SiII_6150A_err": 2.169581564367547
     },
     "paper_results": {
-        "pEW_SiII_6355": 42.6,
-        "pEW_SiII_6355_err": 5.6,
+        "supernova_name": "SN2006hx",
         "v_SiII": 10.5,
-        "v_SiII_err": 0.5
+        "v_SiII_err": 0.5,
+        "pEW_SiII_5972": 12.6,
+        "pEW_SiII_5972_err": 5.9,
+        "pEW_SiII_6355": 42.6,
+        "pEW_SiII_6355_err": 5.6
     }
 }

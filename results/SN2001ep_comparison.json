@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2001ep",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.013012
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 104.70875409366401,
         "pEW_SiII_6150A_err": 3.5007346177497007,
         "v_SiII_6150A": 11.881917650281421,
-        "v_SiII_6150A_err": 0.3079698751503566
+        "v_SiII_6150A_err": 0.29772330269476854
     },
     "paper_results": {
-        "pEW_SiII_6355": 111.7,
-        "pEW_SiII_6355_err": 2.1,
+        "supernova_name": "SN2001ep",
         "v_SiII": 10.7,
-        "v_SiII_err": 0.2
+        "v_SiII_err": 0.2,
+        "pEW_SiII_5972": 31.9,
+        "pEW_SiII_5972_err": 2.1,
+        "pEW_SiII_6355": 111.7,
+        "pEW_SiII_6355_err": 2.1
     }
 }

@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2005M",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.022972
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 41.578071517775186,
         "pEW_SiII_6150A_err": 3.954118021400139,
         "v_SiII_6150A": 8.687998885054771,
-        "v_SiII_6150A_err": 0.597332106933627
+        "v_SiII_6150A_err": 0.6350063366763926
     },
     "paper_results": {
-        "pEW_SiII_6355": 47.5,
-        "pEW_SiII_6355_err": 4.5,
+        "supernova_name": "SN2005M",
         "v_SiII": 9.2,
-        "v_SiII_err": 0.4
+        "v_SiII_err": 0.4,
+        "pEW_SiII_5972": 7.4,
+        "pEW_SiII_5972_err": 3.7,
+        "pEW_SiII_6355": 47.5,
+        "pEW_SiII_6355_err": 4.5
     }
 }

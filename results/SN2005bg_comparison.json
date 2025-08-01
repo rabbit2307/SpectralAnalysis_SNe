@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2005bg",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.024159
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 141.89174227225453,
         "pEW_SiII_6150A_err": 3.9128465736301092,
         "v_SiII_6150A": 17.45749629130999,
-        "v_SiII_6150A_err": 0.4449207599876973
+        "v_SiII_6150A_err": 0.5005586449871682
     },
     "paper_results": {
-        "pEW_SiII_6355": 105.5,
-        "pEW_SiII_6355_err": 9.9,
+        "supernova_name": "SN2005bg",
         "v_SiII": 10.6,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 7.3,
+        "pEW_SiII_5972_err": 3.1,
+        "pEW_SiII_6355": 105.5,
+        "pEW_SiII_6355_err": 9.9
     }
 }

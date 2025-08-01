@@ -1,0 +1,18 @@
+{
+    "supernova_name": "SN2000cx",
+    "analysis_results": {
+        "pEW_SiII_6150A": 15.567786607750048,
+        "pEW_SiII_6150A_err": 4.647765596083622,
+        "v_SiII_6150A": 11.12691083110664,
+        "v_SiII_6150A_err": 2.5079176160174166
+    },
+    "paper_results": {
+        "supernova_name": "SN2000cx",
+        "v_SiII": 11.8,
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 5.9,
+        "pEW_SiII_5972_err": 2.2,
+        "pEW_SiII_6355": 40.3,
+        "pEW_SiII_6355_err": 3.8
+    }
+}

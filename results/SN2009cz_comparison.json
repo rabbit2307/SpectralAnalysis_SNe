@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2009cz",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.0211
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 66.18525038707661,
         "pEW_SiII_6150A_err": 2.2939822530080733,
         "v_SiII_6150A": 9.724767205247824,
-        "v_SiII_6150A_err": 0.5434936277888742
+        "v_SiII_6150A_err": 0.6375765817546085
     },
     "paper_results": {
-        "pEW_SiII_6355": 75.6,
-        "pEW_SiII_6355_err": 4.2,
+        "supernova_name": "SN2009cz",
         "v_SiII": 10.1,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 11.9,
+        "pEW_SiII_5972_err": 3.2,
+        "pEW_SiII_6355": 75.6,
+        "pEW_SiII_6355_err": 4.2
     }
 }

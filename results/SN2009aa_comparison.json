@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2009aa",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.02731
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 78.53162881089179,
         "pEW_SiII_6150A_err": 2.1237292018494625,
         "v_SiII_6150A": 19.043502073206767,
-        "v_SiII_6150A_err": 0.3453207879235019
+        "v_SiII_6150A_err": 0.4076526097018338
     },
     "paper_results": {
-        "pEW_SiII_6355": 63.2,
-        "pEW_SiII_6355_err": 2.6,
+        "supernova_name": "SN2009aa",
         "v_SiII": 10.9,
-        "v_SiII_err": 0.4
+        "v_SiII_err": 0.4,
+        "pEW_SiII_5972": 20.1,
+        "pEW_SiII_5972_err": 2.9,
+        "pEW_SiII_6355": 63.2,
+        "pEW_SiII_6355_err": 2.6
     }
 }

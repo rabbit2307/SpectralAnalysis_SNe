@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2005eq",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.028351
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 34.93829991959709,
         "pEW_SiII_6150A_err": 5.933332438347433,
         "v_SiII_6150A": 9.59033824683737,
-        "v_SiII_6150A_err": 1.4312547113007295
+        "v_SiII_6150A_err": 1.425058300700564
     },
     "paper_results": {
-        "pEW_SiII_6355": 77.3,
-        "pEW_SiII_6355_err": 7.1,
+        "supernova_name": "SN2005eq",
         "v_SiII": 9.8,
-        "v_SiII_err": 0.2
+        "v_SiII_err": 0.2,
+        "pEW_SiII_5972": 16.8,
+        "pEW_SiII_5972_err": 4.8,
+        "pEW_SiII_6355": 77.3,
+        "pEW_SiII_6355_err": 7.1
     }
 }

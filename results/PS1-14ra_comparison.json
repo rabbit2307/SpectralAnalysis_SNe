@@ -1,19 +1,18 @@
 {
     "supernova_name": "PS1-14ra",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.03
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 125.72755196924567,
         "pEW_SiII_6150A_err": 6.146032991378011,
         "v_SiII_6150A": 12.3282104635675,
-        "v_SiII_6150A_err": 0.5259782460650078
+        "v_SiII_6150A_err": 0.5499946456680644
     },
     "paper_results": {
-        "pEW_SiII_6355": 124.0,
-        "pEW_SiII_6355_err": 6.3,
+        "supernova_name": "PS1-14ra",
         "v_SiII": 11.2,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 34.2,
+        "pEW_SiII_5972_err": 3.9,
+        "pEW_SiII_6355": 124.0,
+        "pEW_SiII_6355_err": 6.3
     }
 }

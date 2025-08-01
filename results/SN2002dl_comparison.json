@@ -1,0 +1,18 @@
+{
+    "supernova_name": "SN2002dl",
+    "analysis_results": {
+        "pEW_SiII_6150A": 105.86042170819438,
+        "pEW_SiII_6150A_err": 11.576393757735405,
+        "v_SiII_6150A": 12.112683264504213,
+        "v_SiII_6150A_err": 0.5853883965116533
+    },
+    "paper_results": {
+        "supernova_name": "SN2002dl",
+        "v_SiII": 12.5,
+        "v_SiII_err": 0.4,
+        "pEW_SiII_5972": 40.2,
+        "pEW_SiII_5972_err": 4.5,
+        "pEW_SiII_6355": 90.1,
+        "pEW_SiII_6355_err": 4.9
+    }
+}

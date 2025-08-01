@@ -1,19 +1,18 @@
 {
     "supernova_name": "ASASSN-14hr",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.03362
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 104.15260755835253,
         "pEW_SiII_6150A_err": 5.683781909484273,
         "v_SiII_6150A": 11.903058908279105,
-        "v_SiII_6150A_err": 0.44741559851739887
+        "v_SiII_6150A_err": 0.3956523946676846
     },
     "paper_results": {
-        "pEW_SiII_6355": 103.1,
-        "pEW_SiII_6355_err": 5.3,
+        "supernova_name": "ASASSN-14hr",
         "v_SiII": 13.6,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 30.5,
+        "pEW_SiII_5972_err": 4.2,
+        "pEW_SiII_6355": 103.1,
+        "pEW_SiII_6355_err": 5.3
     }
 }

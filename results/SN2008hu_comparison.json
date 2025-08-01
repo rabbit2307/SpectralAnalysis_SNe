@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2008hu",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.05056
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 115.96901748577163,
         "pEW_SiII_6150A_err": 11.109440203729978,
         "v_SiII_6150A": 12.855666288931975,
-        "v_SiII_6150A_err": 0.7785023995973364
+        "v_SiII_6150A_err": 0.7125413889492881
     },
     "paper_results": {
-        "pEW_SiII_6355": 127.0,
-        "pEW_SiII_6355_err": 9.4,
+        "supernova_name": "SN2008hu",
         "v_SiII": 12.4,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 15.9,
+        "pEW_SiII_5972_err": 4.7,
+        "pEW_SiII_6355": 127.0,
+        "pEW_SiII_6355_err": 9.4
     }
 }

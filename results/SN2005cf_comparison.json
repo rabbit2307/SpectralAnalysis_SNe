@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2005cf",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.006461
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 129.0296604231983,
         "pEW_SiII_6150A_err": 13.067047211314714,
         "v_SiII_6150A": 16.81907344765245,
-        "v_SiII_6150A_err": 0.7231154126036159
+        "v_SiII_6150A_err": 0.7048455957004633
     },
     "paper_results": {
-        "pEW_SiII_6355": 89.7,
-        "pEW_SiII_6355_err": 1.2,
+        "supernova_name": "SN2005cf",
         "v_SiII": 10.3,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 17.0,
+        "pEW_SiII_5972_err": 1.1,
+        "pEW_SiII_6355": 89.7,
+        "pEW_SiII_6355_err": 1.2
     }
 }

@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2002fk",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.007132
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 65.47411754415094,
         "pEW_SiII_6150A_err": 2.280564735179403,
         "v_SiII_6150A": 9.99391490934163,
-        "v_SiII_6150A_err": 0.30202818830141936
+        "v_SiII_6150A_err": 0.3090315522342304
     },
     "paper_results": {
-        "pEW_SiII_6355": 80.7,
-        "pEW_SiII_6355_err": 2.2,
+        "supernova_name": "SN2002fk",
         "v_SiII": 9.8,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 18.6,
+        "pEW_SiII_5972_err": 1.7,
+        "pEW_SiII_6355": 80.7,
+        "pEW_SiII_6355_err": 2.2
     }
 }

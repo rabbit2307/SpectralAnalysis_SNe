@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2012gm",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.0148
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 96.33488689624303,
         "pEW_SiII_6150A_err": 10.383443447959399,
         "v_SiII_6150A": 11.870957320649755,
-        "v_SiII_6150A_err": 0.7391680012576818
+        "v_SiII_6150A_err": 0.8440875584547166
     },
     "paper_results": {
-        "pEW_SiII_6355": 101.5,
-        "pEW_SiII_6355_err": 7.5,
+        "supernova_name": "SN2012gm",
         "v_SiII": 10.4,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 24.1,
+        "pEW_SiII_5972_err": 4.0,
+        "pEW_SiII_6355": 101.5,
+        "pEW_SiII_6355_err": 7.5
     }
 }

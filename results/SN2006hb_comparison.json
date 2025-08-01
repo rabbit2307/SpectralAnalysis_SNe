@@ -1,19 +1,10 @@
 {
     "supernova_name": "SN2006hb",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.015337
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 116.452736422524,
         "pEW_SiII_6150A_err": 3.41562957746441,
         "v_SiII_6150A": 15.217480027857288,
-        "v_SiII_6150A_err": 0.24059628734427974
+        "v_SiII_6150A_err": 0.2336746860131013
     },
-    "paper_results": {
-        "pEW_SiII_6355": null,
-        "pEW_SiII_6355_err": null,
-        "v_SiII": null,
-        "v_SiII_err": null
-    }
+    "paper_results": {}
 }

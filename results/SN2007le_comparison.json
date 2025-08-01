@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2007le",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.006721
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 148.22919711513387,
         "pEW_SiII_6150A_err": 3.107978646785708,
         "v_SiII_6150A": 15.631206766212344,
-        "v_SiII_6150A_err": 0.4020426592444821
+        "v_SiII_6150A_err": 0.45487251917165467
     },
     "paper_results": {
-        "pEW_SiII_6355": 113.9,
-        "pEW_SiII_6355_err": 3.5,
+        "supernova_name": "SN2007le",
         "v_SiII": 11.9,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 12.7,
+        "pEW_SiII_5972_err": 1.6,
+        "pEW_SiII_6355": 113.9,
+        "pEW_SiII_6355_err": 3.5
     }
 }

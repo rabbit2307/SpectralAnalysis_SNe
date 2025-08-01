@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2012aq",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.05
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 101.35606460016024,
         "pEW_SiII_6150A_err": 7.68099528742245,
         "v_SiII_6150A": 10.829960853310206,
-        "v_SiII_6150A_err": 0.8967848224269257
+        "v_SiII_6150A_err": 0.7773844588216255
     },
     "paper_results": {
-        "pEW_SiII_6355": 105.5,
-        "pEW_SiII_6355_err": 3.5,
+        "supernova_name": "SN2012aq",
         "v_SiII": 11.2,
-        "v_SiII_err": 0.4
+        "v_SiII_err": 0.4,
+        "pEW_SiII_5972": 27.6,
+        "pEW_SiII_5972_err": 2.2,
+        "pEW_SiII_6355": 105.5,
+        "pEW_SiII_6355_err": 3.5
     }
 }

@@ -1,0 +1,18 @@
+{
+    "supernova_name": "SN1999dq",
+    "analysis_results": {
+        "pEW_SiII_6150A": 109.08917478157446,
+        "pEW_SiII_6150A_err": 4.214352386215295,
+        "v_SiII_6150A": -7.7490661849068205,
+        "v_SiII_6150A_err": 2.042735314876383
+    },
+    "paper_results": {
+        "supernova_name": "SN1999dq",
+        "v_SiII": 11.1,
+        "v_SiII_err": 0.1,
+        "pEW_SiII_5972": 9.3,
+        "pEW_SiII_5972_err": 1.6,
+        "pEW_SiII_6355": 44.8,
+        "pEW_SiII_6355_err": 2.3
+    }
+}

@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2007bm",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.006211
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 111.16477046620906,
         "pEW_SiII_6150A_err": 8.094066008683486,
         "v_SiII_6150A": 12.740661579913146,
-        "v_SiII_6150A_err": 0.40844513351247674
+        "v_SiII_6150A_err": 0.3993732756187349
     },
     "paper_results": {
-        "pEW_SiII_6355": 101.8,
-        "pEW_SiII_6355_err": 2.7,
+        "supernova_name": "SN2007bm",
         "v_SiII": 10.6,
-        "v_SiII_err": 0.2
+        "v_SiII_err": 0.2,
+        "pEW_SiII_5972": 24.7,
+        "pEW_SiII_5972_err": 1.5,
+        "pEW_SiII_6355": 101.8,
+        "pEW_SiII_6355_err": 2.7
     }
 }

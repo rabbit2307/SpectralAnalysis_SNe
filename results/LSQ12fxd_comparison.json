@@ -1,19 +1,10 @@
 {
     "supernova_name": "LSQ12fxd",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.031
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 71.8534936577777,
         "pEW_SiII_6150A_err": 4.034336460120061,
         "v_SiII_6150A": 12.55507139714697,
-        "v_SiII_6150A_err": 0.971361923415586
+        "v_SiII_6150A_err": 0.959174036132364
     },
-    "paper_results": {
-        "pEW_SiII_6355": null,
-        "pEW_SiII_6355_err": null,
-        "v_SiII": null,
-        "v_SiII_err": null
-    }
+    "paper_results": {}
 }

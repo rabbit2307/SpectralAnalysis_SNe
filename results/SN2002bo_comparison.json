@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2002bo",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.00424
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 127.24200739203434,
         "pEW_SiII_6150A_err": 10.006075035274769,
         "v_SiII_6150A": 17.184123459958133,
-        "v_SiII_6150A_err": 1.0775798068802005
+        "v_SiII_6150A_err": 0.9530091060486192
     },
     "paper_results": {
-        "pEW_SiII_6355": 150.4,
-        "pEW_SiII_6355_err": 9.3,
+        "supernova_name": "SN2002bo",
         "v_SiII": 13.4,
-        "v_SiII_err": 0.2
+        "v_SiII_err": 0.2,
+        "pEW_SiII_5972": 10.5,
+        "pEW_SiII_5972_err": 5.1,
+        "pEW_SiII_6355": 150.4,
+        "pEW_SiII_6355_err": 9.3
     }
 }

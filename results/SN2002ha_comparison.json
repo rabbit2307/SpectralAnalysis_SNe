@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2002ha",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.014046
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 101.64453861519443,
         "pEW_SiII_6150A_err": 2.544113795367214,
         "v_SiII_6150A": 11.24539912312105,
-        "v_SiII_6150A_err": 0.41881865245916106
+        "v_SiII_6150A_err": 0.49158503241174284
     },
     "paper_results": {
-        "pEW_SiII_6355": 111.3,
-        "pEW_SiII_6355_err": 2.8,
+        "supernova_name": "SN2002ha",
         "v_SiII": 11.3,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 30.6,
+        "pEW_SiII_5972_err": 2.6,
+        "pEW_SiII_6355": 111.3,
+        "pEW_SiII_6355_err": 2.8
     }
 }

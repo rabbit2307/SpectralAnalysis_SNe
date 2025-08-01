@@ -1,19 +1,18 @@
 {
     "supernova_name": "SN2013gy",
-    "metadata": {
-        "type": "Ia",
-        "redshift": 0.014023
-    },
     "analysis_results": {
         "pEW_SiII_6150A": 102.03357837544628,
         "pEW_SiII_6150A_err": 7.747022487417956,
         "v_SiII_6150A": 14.287847200678003,
-        "v_SiII_6150A_err": 1.0460790701794755
+        "v_SiII_6150A_err": 0.927943815085835
     },
     "paper_results": {
-        "pEW_SiII_6355": 114.1,
-        "pEW_SiII_6355_err": 4.3,
+        "supernova_name": "SN2013gy",
         "v_SiII": 10.2,
-        "v_SiII_err": 0.3
+        "v_SiII_err": 0.3,
+        "pEW_SiII_5972": 28.9,
+        "pEW_SiII_5972_err": 4.2,
+        "pEW_SiII_6355": 114.1,
+        "pEW_SiII_6355_err": 4.3
     }
 }

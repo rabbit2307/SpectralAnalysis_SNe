@@ -1,0 +1,18 @@
+{
+    "supernova_name": "SN2007ba",
+    "analysis_results": {
+        "pEW_SiII_6150A": -1.7966565461268396,
+        "pEW_SiII_6150A_err": 1.2408489549724562,
+        "v_SiII_6150A": 7.412672428854249,
+        "v_SiII_6150A_err": 0.25046491342440286
+    },
+    "paper_results": {
+        "supernova_name": "SN2007ba",
+        "v_SiII": 10.8,
+        "v_SiII_err": 0.2,
+        "pEW_SiII_5972": 49.1,
+        "pEW_SiII_5972_err": 2.8,
+        "pEW_SiII_6355": 94.9,
+        "pEW_SiII_6355_err": 3.0
+    }
+}
