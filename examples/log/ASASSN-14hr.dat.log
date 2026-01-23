@@ -1,0 +1,17 @@
+INFO: Loaded spectrum: 
+N = 3328
+Wavelength range: (5400.00, 9566.41)
+Wavelength unit: WaveUnit.ANGSTROMS
+
+INFO: Downsampled from 3328 to 1109 points with a factor of 3.00.
+
+INFO: Created GP model
+INFO: GP Hyperparameters (Initial):
+INFO:   Constant kernel:  1.00e+00 (bounds: 1.00e-01 - 1.00e+01)
+INFO:   Matern length_scale (WaveUnit.ANGSTROMS): 5.82e+02 (bounds: 1.16e+01 - 5.82e+03)
+INFO:   White noise: 1.00e-01 (bounds: 1.00e-05 - 1.00e+00)
+INFO: Optimizing hyperparameters...
+INFO: GP Hyperparameters (Optimized):
+INFO:   Constant kernel:  1.30e+00 (bounds: 1.00e-01 - 1.00e+01)
+INFO:   Matern length_scale (WaveUnit.ANGSTROMS): 2.83e+02 (bounds: 1.16e+01 - 5.82e+03)
+INFO:   White noise: 6.41e-03 (bounds: 1.00e-05 - 1.00e+00)
